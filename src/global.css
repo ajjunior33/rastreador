@@ -1,0 +1,75 @@
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+
+
+.form-group{
+    display: flex;
+    margin:18px 0;
+    flex-direction: column;
+}
+.form-control{
+    border:0;
+    padding:12px 15px;
+    color:#333;
+    border-radius: 5px;
+    border:1px solid #333;
+}
+
+
+/*Button Styles*/
+.btn{
+    border:0;
+    padding:10px 45px;
+    border-radius: 8px;
+    background-color:#c1c1c1;   
+    transition:300ms;
+    font-weight: 500;
+}
+.btn:hover{
+    filter: brightness(90%);
+}
+
+.btn-primary{
+    background-color: var(--blue);
+    color:var(--white);
+}
+
+.btn-outline-primary{
+    background-color: transparent;
+    color:var(--blue);
+    border:2px solid var(--blue);
+}
+.btn-primary:disabled{
+    cursor: not-allowed;
+    filter: brightness(50%);
+}
+.btn-outline-primary:hover{
+color:var(--white);
+background-color:var(--blue);
+}
+
+
+/* Button - Dark*/
+.btn-dark{
+    color:#FFF;
+    background-color:#30336b;
+}
+.btn-dark:hover{
+    background-color: #130f40;
+}
+.btn-block{
+    width: 100%;
+}
+.buttonBack{
+    display: flex;
+    align-items: center;
+    color: #333333;
+    font-size:1em;
+    text-decoration: none;
+}
+
+.buttonBack svg{
+    font-size:1.2em;
+}
