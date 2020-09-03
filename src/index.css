@@ -1,6 +1,15 @@
 :root{
   --blue:#2980b9;
   --white:#f1f1f1;
+  --dark:#30336b;
+  --darkhover:#130f40;
+}
+*{
+  padding: 0;
+  margin:0;
+  outline: 0;
+  box-sizing: border-box;
+
 }
 body,
 input,
