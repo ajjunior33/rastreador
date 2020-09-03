@@ -1,44 +1,85 @@
-.wrapper{
-    display: grid;
-    grid-template-columns: 15fr 85fr;
+.wrapper {
+  display: grid;
+  grid-template-columns: 15fr 85fr;
 }
-.menu{
-    background-color:var(--dark);
-    display: flex;
-    justify-items: center;
-    height: 100vh;
+
+.menu {
+  background-color: var(--dark);
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
-.menu ul{
-    list-style: none;
+.menu ul {
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
 }
 .menu ul li {
-    width: 100%;
-    background-color: #4834d4;
-    padding: 15px 10px;
-    margin:15px 0;
-    border-radius:15px;
-    color:var(--white);
+  width: 100%;
+  background-color: #4834d4;
+  padding: 10px 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  color: var(--white);
 
-    transition: 1s;
+  transition: 1s;
 }
-.menu a{
-    text-decoration: none;
+.menu a {
+  text-decoration: none;
 }
-.menu ul li:hover{
-    background-color:var(--darkhover);
+.menu ul li:hover {
+  background-color: var(--darkhover);
+}
+.profile {
+  width: 280px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile h3{
+    text-align: center;
+    color:var(--white);
+    font-size: 1.5em;
+}
+
+.profile .image {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+}
+.profile .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
 }
 
 /* CONTAINER */
-.container-fluid{
-    background-color:var(--darkhover);
+.container-fluid {
+  background-color: var(--darkhover);
 }
-.container-fluid header{
-    width: 100%;
-    padding: 15px 30px;
-    background-color:var(--white);
+.container-fluid header {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: var(--white);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
-@media(max-width:640px){
-    .wrapper{
-        grid-template-columns: 100fr;
-    }
+
+.container-fluid .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.container-fluid .logout svg {
+  color: #f10030;
+  font-size: 1.5em;
+}
+@media (max-width: 640px) {
+  .wrapper {
+    grid-template-columns: 100fr;
+  }
 }

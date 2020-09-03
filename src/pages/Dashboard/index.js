@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FiLogOut } from "react-icons/fi";
 
 import "./style.css";
 
@@ -7,6 +8,15 @@ function Dashboard() {
   return (
     <div className="wrapper">
       <nav className="menu">
+        <div className="profile">
+          <div className="image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1024px-Circle-icons-profile.svg.png"
+              alt="profileImage"
+            />
+            <h3>André Souza </h3>
+          </div>
+        </div>
         <ul>
           <Link to="#">
             <li>Página Inicial</li>
@@ -22,10 +32,10 @@ function Dashboard() {
 
       <section className="container-fluid">
         <header>
-            <div className="logo">FLOTTUR</div>
-            <div className="logout">
-                
-            </div>
+          <div className="logo">FLOTTUR</div>
+          <div className="logout">
+            <FiLogOut />
+          </div>
         </header>
 
         <section className="content-fluid">
