@@ -1,0 +1,36 @@
+.container-login{
+    max-width: 380px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#FFF;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+    padding:45px 30px;
+    border-radius: 8px;
+}
+.name-company{
+    text-align: center;
+    font-size:2.2em;
+}
+nav.access-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.access-login a{
+    color:var(--blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+nav.access-login a:hover{
+    text-decoration: underline;
+}
+footer.access-login{
+    margin:45px 0 10px 0;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+}
