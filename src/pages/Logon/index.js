@@ -19,6 +19,22 @@ function Logon() {
       console.log(reponse);
     });
   }
+
+  function session_create(token) {
+    console.log(token);
+
+    api
+      .post("/auth/create_session", {},{
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then((response) => {
+        console.log(response.data);
+        const data = JSON.stringify(response.data.data);
+        localStorage.setItem('storage', data);
+      });
+  }
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -29,7 +45,8 @@ function Logon() {
       api
         .post("/auth", { email, password })
         .then((response) => {
-          localStorage.setItem('token', response.data.token);
+          session_create(response.data.token);
+          localStorage.setItem('token',response.data.token);
           history.push('/dashboard');
         })
         .catch((err) => {

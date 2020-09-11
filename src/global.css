@@ -72,3 +72,53 @@
 }
 
 
+/*
+  BOX
+*/
+
+.box{
+  width: 100%;
+  max-width: 380px;
+  padding:30px 20px;
+  min-height: 160px;
+  color:var(--white);
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px var(--darkhover);
+  background-color:var(--dark);
+  position:absolute;;
+}
+.box .title-sider{
+  font-size: 2.2em;
+}
+.box .tag-bottom{
+  color:rgba(255, 255, 255, .8);
+  font-size: 4em;
+
+  position: absolute;
+  right: 30px;
+  bottom:30px
+}
+.box footer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold ;
+  width: 100%;
+  color:var(--dark);
+  position:absolute;
+  bottom:0;
+  left: 0;
+  padding: 5px;
+  background-color: var(--white);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.box footer a {
+text-decoration: none;
+color: var(--dark);
+}
+.box footer a:hover{
+text-decoration: underline;
+color:var(--darkhover);
+}

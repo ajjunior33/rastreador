@@ -1,0 +1,37 @@
+#details {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+}
+.details_car {
+  background-color: rgba(112, 63, 246, 0.6);
+  width: 20%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
+.section_details{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    width:90%;
+    margin:10px;
+    padding:20px 10px;
+    color:var(--white);
+
+    border-bottom:1px solid #fff;
+}
+
+.section_details:last-child{
+    border-bottom: none;
+}
+
+.maps {
+  width: 80%;
+  background-color: blue;
+  height: 100%;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
