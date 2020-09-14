@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 
 import Navbar from "../../components/Navbar";
 import HeaderSection from "../../components/HeaderSection";
@@ -8,10 +9,13 @@ import "./style.css";
 function Dashboard() {
   const [ qtdcar, setQtdCar] = useState();
   useEffect(() => {
+    
     let session = localStorage.getItem("storage");
-    session = JSON.parse(session);
-    setQtdCar(session.car[0]);
-  }, []);
+    if(session !== null){
+      session = JSON.parse(session);
+      setQtdCar(session.car[0]);
+    } 
+  }, []); 
   return (
     <div className="wrapper">
       <Navbar />
@@ -24,7 +28,9 @@ function Dashboard() {
             <span className="title-sider">Meus Carros</span>
             <span className="tag-bottom">{qtdcar}</span>
 
-            <footer>Verificar lista de carros</footer>
+            <footer>
+              <Link to="/mycars">Verificar lista de carros</Link>
+            </footer>
           </div>
         </section>
       </section>
